@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;400&display=swap');
+
+:root
+{
+    --font-titles: 'Playfair Display', serif;
+    --font-main: 'Roboto', sans-serif;
+    --color-main: hsl(191.65deg 91.4% 36.47%);
+    --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --color-font-gray: #707070;
+    --color-font-dark-black: #1e1e1e;
+    --text-shadow: 1px 4px 4px rgba(0,0,0,0.6);;
+}
+
+*,
+*::before,
+*::after
+{
+    border: 1px solid red;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body
+{
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:50px;
+    overflow-x: hidden;
+    padding: 5% 0 0 0;
+}
+
+/* Mobile first */
+
+div.deco
+{
+    position:absolute;
+    z-index: -10;
+    width: 200%;
+    height: 422px;
+    background-color: var(--color-main);
+    transform: translate(-77px, -100px) rotate(-30deg);
+    box-shadow: var(--box-shadow);
+}
+
+header.about-me 
+{
+    width: 90%;
+    display:flex;
+    flex-direction: column; 
+    align-items:center;
+    gap: 50px;
+}
+
+header.about-me > div.image
+{
+    position:relative;
+    width: 90%;
+}
+
+header.about-me > div.image > img
+{
+    width: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+header.about-me > div.image > h2
+{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    margin: 10px;
+    font-size:5rem;
+    font-family: var(--font-titles);
+    font-weight: 100;
+    color:white;
+    text-shadow: var(--text-shadow);
+}
+
+header.about-me > div.info
+{
+    display:flex;
+    flex-direction:column;
+    gap: 25px;
+}
+
+header.about-me > div.info > h2
+{
+    font-size: 3rem;
+    font-family: var(--font-titles);
+    font-weight: 400;
+    text-align:center;
+}
+
+header.about-me > div.info > p
+{
+    font-family: var(--font-main);
+    color: var(--color-font-gray);
+    font-size: 1.5rem;
+}
+
+header.about-me > div.info > div.icons
+{
+    display:flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+header.about-me > div.info > div.icons > i
+{
+    font-size: 3rem;
+}
+
+section.my-work
+{
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 25px;
+}
+
+section.my-work > h2
+{
+    font-size: 3rem;
+    font-family: var(--font-titles);
+    font-weight: 400;
+    text-align:center;
+}
+
+section.my-work > div.projects
+{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:75px;
+}
+
+section.my-work > div.projects > div.card
+{
+    box-shadow: var(--box-shadow);
+}
+
+/* Change background color of each card. */
+section.my-work > div.projects > div.card:nth-child(2) > div.upper
+{
+    background-color: #d88f39;
+}
+
+section.my-work > div.projects > div.card:nth-child(3) > div.upper
+{
+    background-color: #5e8f4d;
+}
+
+section.my-work > div.projects > div.card:nth-child(4) > div.upper
+{
+    background-color: #ca7599;
+}
+
+section.my-work > div.projects > div.card:nth-child(5) > div.upper
+{
+    background-color: #4692d9;
+}
+
+section.my-work > div.projects > div.card:last-of-type > div.upper
+{
+    background-color: #5e8f4d;
+}
+
+
+
+section.my-work > div.projects > div.card > div.upper
+{
+    height: 60%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color:#7c75ca ;
+    padding: 100px 25px;
+}
+
+section.my-work > div.projects > div.card > div.upper > p
+{
+    font-size: 3rem;
+    font-weight: 400;
+    text-align:center;
+    color:white;
+}
+
+section.my-work > div.projects > div.card > div.lower
+{
+    height: 40%;
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
+section.my-work > div.projects > div.card > div.lower > div.title
+{
+    display:flex;
+    justify-content: space-between;
+    padding:0 25px ;
+}
+
+section.my-work > div.projects > div.card > div.lower > div.title > p
+{
+    font-family:var(--font-titles);
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+section.my-work > div.projects > div.card > div.lower > div.title > div.icons
+{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+section.my-work > div.projects > div.card > div.lower > div.title > div.icons > i
+{
+    font-size: 1.75rem;
+}
+
+section.my-work > div.projects > div.card > div.lower
+{
+    padding: 25px;
+}
+
+section.my-work > div.projects > div.card > div.lower > p
+{
+    font-size: 1.4rem;
+    font-family: var(--font-main);
+    color: var(--color-font-gray);
+}
+
+footer.contact-me
+{
+    background-color: var(--color-main);
+    padding: 50px 25px 0 25px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:75px;
+}
+
+footer.contact-me > div.info
+{
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer.contact-me > div.info > h2
+{
+    font-size:4rem;
+    color:white;
+    text-align:center;
+    font-weight: 400;
+}
+
+footer.contact-me > div.info > p
+{
+    font-family: var(--font-main);
+    color:white;
+}
+
+footer.contact-me > div.info > p > i
+{
+    display:none;
+}
+
+footer.contact-me > div.info > p:first-of-type
+{
+    font-size: 1.25rem;
+    font-family: var(--font-main);
+    color:white;
+}
+
+footer.contact-me > div.info > div.icons
+{
+    display:flex;
+    justify-content:center;
+    gap: 25px;
+}
+
+footer.contact-me > div.info > div.icons > i
+{
+    font-size: 3rem;
+}
+
+footer.contact-me > img
+{
+    width: 120%;
+}
+
+
+/* Tablet breakpoint */
+
+@media (width >= 480px)
+{
+    body
+    {
+        background-color: orange;
+    }
+}
+
+/* Desktop breakpoint */
+@media (width >= 768px)
+{
+    body
+    {
+        background-color: green;
+    }
+
+}

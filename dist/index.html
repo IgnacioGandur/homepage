@@ -1,0 +1,38 @@
+<head><link rel="icon" href="assets/favicon.png"><script defer="defer" src="bundle.js?66038628d4bf7024d49a"></script></head>Html Webpack Plugin:<pre>
+  Error: Child compilation failed:
+  Module Error (from ./node_modules/html-loader/dist/cjs.js):
+  HtmlSourceError: Bad value for attribute "src" on element "img": Must be non-empty (From line 129, column 14; to line 129, column 20)
+  ModuleError: Module Error (from ./node_modules/html-loader/dist/cjs.js):
+  HtmlSourceError: Bad value for attribute "src" on element "img": Must be non-empty (From line 129, column 14; to line 129, column 20)
+      at Object.emitError (/home/ignacio/Documents/GitHub/homepage/node_modules/webpack/lib/NormalModule.js:614:6)
+      at Object.loader (/home/ignacio/Documents/GitHub/homepage/node_modules/html-loader/dist/index.js:59:10)
+  
+  - NormalModule.js:614 Object.emitError
+    [homepage]/[webpack]/lib/NormalModule.js:614:6
+  
+  - index.js:59 Object.loader
+    [homepage]/[html-loader]/dist/index.js:59:10
+  
+  - child-compiler.js:169 
+    [homepage]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:551 finalCallback
+    [homepage]/[webpack]/lib/Compiler.js:551:5
+  
+  - Compiler.js:577 
+    [homepage]/[webpack]/lib/Compiler.js:577:11
+  
+  - Compiler.js:1200 
+    [homepage]/[webpack]/lib/Compiler.js:1200:17
+  
+  
+  - task_queues:95 processTicksAndRejections
+    node:internal/process/task_queues:95:5
+  
+  - task_queues:64 runNextTicks
+    node:internal/process/task_queues:64:3
+  
+  - timers:447 process.processImmediate
+    node:internal/timers:447:9
+  
+</pre>
