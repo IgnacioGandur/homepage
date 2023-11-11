@@ -7,28 +7,27 @@
     <script src="https://kit.fontawesome.com/64a715bddf.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="deco"></div>
-    <header class="about-me" aria-label="About Me">
+    <div class="decoration"></div>
+    <header class="about-me">
         <div class="image">
-            <img
+            <img 
             srcset="
             ./images/person/person-300.jpg 300w,
             ./images/person/person-600.jpg 600w,
-            ./images/person/person-1200.jpg 1200w,
+            ./images/person/person-1200.jpg 1200w
+
             "
             sizes="
-            (max-width: 479px) 300px,
-            (max-width: 768px) 600px,
-            (min-width: 769px) 1200px
+            (max-width: 500px) 100vw,
+            (max-width: 1100px) 400px,
+            600px
             "
-            src="./images/person/person-1200.jpg" 
-            alt="Page author"
-            >
+            src="./images/person/person-1200.jpg" alt="">
             <h2>Ignacio Gandur</h2>
         </div>
         <div class="info">
             <h2>About me</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis error assumenda quasi ad! Dolor perspiciatis non in maxime quasi incidunt autem neque explicabo, temporibus qui possimus alias, quas, soluta voluptas.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quod enim alias odit pariatur ea totam tempore repellendus delectus ullam deserunt eligendi magni minus excepturi qui neque consequuntur, molestias, nemo, asperiores ut aperiam iste! Error sapiente amet asperiores quo, quibusdam cum doloribus facere voluptate? Sequi odio totam adipisci nobis aliquam optio necessitatibus tempora dolores iste nam tenetur placeat dolorem eveniet, dolore laboriosam itaque atque in quo facere quis, debitis dolorum voluptate pariatur quidem? Accusamus mollitia voluptas quasi aliquid vero fugiat!</p>
             <div class="icons">
                 <i class="fa-brands fa-github"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -36,12 +35,12 @@
             </div>
         </div>
     </header>
-    <section class="my-work" >
+    <section class="my-work">
         <h2>My work</h2>
-        <div class="projects">
+        <div class="projects-container">
             <div class="card">
                 <div class="upper">
-                    <p>Screenshot of project</p>
+                    <p>Screenshot of your project</p>
                 </div>
                 <div class="lower">
                     <div class="title">
@@ -51,13 +50,12 @@
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </div>
                     </div>
-                    <p>Short description of the project. <br> Just a couple sentences will do.</p>
-                    
+                    <p>Short description of the project. A couple of sentences will do.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="upper">
-                    <p>Screenshot of project</p>
+                    <p>Screenshot of your project</p>
                 </div>
                 <div class="lower">
                     <div class="title">
@@ -67,13 +65,12 @@
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </div>
                     </div>
-                    <p>Short description of the project. <br> Just a couple sentences will do.</p>
-                    
+                    <p>Short description of the project. A couple of sentences will do.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="upper">
-                    <p>Screenshot of project</p>
+                    <p>Screenshot of your project</p>
                 </div>
                 <div class="lower">
                     <div class="title">
@@ -83,13 +80,12 @@
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </div>
                     </div>
-                    <p>Short description of the project. <br> Just a couple sentences will do.</p>
-                    
+                    <p>Short description of the project. A couple of sentences will do.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="upper">
-                    <p>Screenshot of project</p>
+                    <p>Screenshot of your project</p>
                 </div>
                 <div class="lower">
                     <div class="title">
@@ -99,13 +95,12 @@
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </div>
                     </div>
-                    <p>Short description of the project. <br> Just a couple sentences will do.</p>
-                    
+                    <p>Short description of the project. A couple of sentences will do.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="upper">
-                    <p>Screenshot of project</p>
+                    <p>Screenshot of your project</p>
                 </div>
                 <div class="lower">
                     <div class="title">
@@ -115,13 +110,12 @@
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </div>
                     </div>
-                    <p>Short description of the project. <br> Just a couple sentences will do.</p>
-                    
+                    <p>Short description of the project. A couple of sentences will do.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="upper">
-                    <p>Screenshot of project</p>
+                    <p>Screenshot of your project</p>
                 </div>
                 <div class="lower">
                     <div class="title">
@@ -131,37 +125,10 @@
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </div>
                     </div>
-                    <p>Short description of the project. <br> Just a couple sentences will do.</p>
-                    
+                    <p>Short description of the project. A couple of sentences will do.</p>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="contact-me">
-        <div class="info">
-            <h2>Contact me</h2>
-            <p>Please get in touch if you think our work could be mutually beneficial!</p>
-            <p class="address">1234 Random Road <br>Random Town, California 12345.</p>
-            <p class="phone"><i class="fa-solid fa-phone"></i>555-555-5555</p>
-            <p class="mail"><i class="fa-regular fa-envelope"></i>ignaciogandur.is.not.real@gmail.com</p>
-            <div class="icons">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-            </div>
-        </div>
-        <img 
-        srcset="
-        ./images/footer-image/footer-image-580.jpg 580w,
-        ./images/footer-image/footer-image-721.jpg 721w,
-        "
-        sizes="
-        (max-width: 480px) 100vw,
-        (max-width: 768px) 721px,
-        1200px
-        "
-        src="./images/footer-image/footer-image.jpg"
-        alt="">
-    </footer>
 </body>
 </html>
